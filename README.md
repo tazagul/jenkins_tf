@@ -39,8 +39,8 @@
 * To get a password run ```cat /var/lib/jenkins/secrets/initialAdminPassword```
 * Install suggested plugins "git plugin is included"
 * Create a pipline and point it to your github repo
-
-This code will create: 
+--- 
+## This code will create: 
 
 1. provider.tf - This section sets up the provider (the plugin for terraform which tells it how to talk with a cloud provider) and the region where the resources will be created. 
 2. key.tf - creates a key and stores it in the region you define in var.tf file. And it is used to connect to the created instance via ssh.
