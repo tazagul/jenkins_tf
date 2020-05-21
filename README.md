@@ -35,7 +35,10 @@
 * Upload it to your github ```settings > SSH and GPG keys```
 * Create a repo from where jenkins will get tasks 
 ### 4. Every time a change is made to GitHub Repo and merged to Master Branch, Jenkins will run the pipeline.
-
+* Login to your Jenkins server through your browser ```IPADDR:8080```
+* To get a password run ```cat /var/lib/jenkins/secrets/initialAdminPassword```
+* Install suggested plugins "git plugin is included"
+* Create a pipline and point it to your github repo
 
 This code will create: 
 
@@ -51,5 +54,5 @@ Port 8080 - default port for jenkins.
 6. role.tf - give permissions to jenkins machine to perform tasks 
 7. instance profile - used to tag the IAM role to the EC2 instance
 6. Output.tf - gives you a public IP of your instance.
-7. Var.tf - contains variables where to create an instance, the size of an instance and private/public key to login to the instance.
+8. Var.tf - contains variables where to create an instance, the size of an instance and private/public key to login to the instance.
 
